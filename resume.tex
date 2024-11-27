@@ -1,34 +1,51 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[a4paper,margin=1in]{geometry}
+\usepackage{fancyhdr}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{titlesec}
+\usepackage{fontawesome5}
 
-% Define color
+% Define colors
 \definecolor{headerblue}{RGB}{44, 62, 80}
+\definecolor{linkblue}{RGB}{41, 128, 185}
+\definecolor{sectiongray}{RGB}{160, 160, 160}
 
-% Title formatting
-\titleformat{\section}{\large\bfseries\color{headerblue}}{}{0em}{}[\titlerule]
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{\textcolor{headerblue}{Sibivendhan K}}}
+\fancyhead[R]{\href{mailto:sibir9266@gmail.com}{\faEnvelope \ sibir9266@gmail.com} \hspace{1cm} \faPhone \ 8248214218}
+\fancyfoot[C]{\thepage}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue
+}
+
+% Section format
+\titleformat{\section}{\large\bfseries\color{headerblue}}{}{0em}{\vspace{-0.5em}}[\titlerule]
 
 \begin{document}
 
-\pagestyle{empty}
-
-% Header
+% Name and Title
 \begin{center}
     {\Huge \textbf{Sibivendhan K}} \\
+    \vspace{3pt}
+    \textit{Innovative Problem Solver | Data Enthusiast | Aspiring Mathematician} \\
     \vspace{5pt}
-    \href{mailto:sibir9266@gmail.com}{sibir9266@gmail.com} \hspace{1cm} 
-    8248214218 \hspace{1cm} 
-    \href{http://www.linkedin.com/in/sibivendhan-k-a25018293}{LinkedIn Profile}
+    \href{http://www.linkedin.com/in/sibivendhan-k-a25018293}{\faLinkedin \ LinkedIn: www.linkedin.com/in/sibivendhan-k-a25018293} \hspace{0.5cm}
+    \href{https://github.com/Sibi-bot}{\faGithub \ GitHub: github.com/Sibi-bot}
 \end{center}
 
 \vspace{0.5cm}
 
 % Career Objective
 \section*{Career Objective}
-"Motivated and results-driven professional seeking to leverage my diverse skills, experience, and passion for continuous improvement to contribute to the success of a dynamic organization, while pursuing opportunities for personal and professional growth in a challenging and collaborative environment."
+Dynamic and results-oriented professional with a strong foundation in mathematics, programming, and analytical problem-solving. Committed to leveraging technical expertise and innovative thinking to deliver impactful solutions and drive organizational success. Seeking opportunities to contribute to challenging projects in a collaborative and growth-focused environment.
 
 % Education
 \section*{Education}
@@ -47,6 +64,14 @@
     Percentage: 78.2\%
 \end{itemize}
 
+% Technical Skills
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=1.5cm]
+    \item \textbf{Programming Languages:} CSS, HTML, Python, C
+    \item \textbf{Tools:} MATLAB, LaTeX, Excel
+    \item \textbf{Soft Skills:} Adaptability, Team player, Problem-solving
+\end{itemize}
+
 % Certifications
 \section*{Certifications}
 \begin{itemize}[leftmargin=1.5cm]
@@ -55,16 +80,16 @@
     \item Certificate in Programming Numerical Methods using C and Python, April 2023
 \end{itemize}
 
-% Technical Skills
-\section*{Technical Skills}
-\begin{itemize}[leftmargin=1.5cm]
-    \item \textbf{Programming:} CSS, HTML, Python, C
-    \item \textbf{Tools:} MATLAB, LaTeX, Excel
-    \item \textbf{Soft Skills:} Adaptability, Team player, Problem-solving
-\end{itemize}
+% Project
+\section*{Key Project}
+\textbf{Analyzing Diabetic Vulnerability to Emerging Viral Threats} \\
+\textbf{Objective:} Predict diabetes risk and identify vulnerable age groups. \\
+\textbf{Methodology:} Simple Additive Weighting (SAW) and Fuzzy TOPSIS. \\
+\textbf{Technologies:} MATLAB, Python, LaTeX, Excel, Fuzzy Logic. \\
+\textbf{Key Findings:} Identified age groups most at risk for diabetes and viral threats.
 
 % Internship
-\section*{Internship}
+\section*{Internship Experience}
 \begin{itemize}[leftmargin=1.5cm]
     \item \textbf{Sundaram Home Finance Ltd, Chennai, Tamil Nadu} \\
     Intern Web Page Developer \hfill Dec 2022 -- Jan 2023 \\
@@ -75,27 +100,19 @@
     \end{itemize}
 \end{itemize}
 
-% Project
-\section*{Project}
-\textbf{Analyzing Diabetic Vulnerability to Emerging Viral Threats} \\
-\textbf{Objective:} Predict diabetes risk and identify vulnerable age groups. \\
-\textbf{Methodology:} Utilized Simple Additive Weighting (SAW) and Fuzzy TOPSIS with health parameters. \\
-\textbf{Technologies:} MATLAB, Python, LaTeX, Excel, Fuzzy Logic. \\
-\textbf{Key Findings:} Identified age groups most at risk for diabetes and viral threats.
-
 % Co-Curricular
-\section*{Co-Curricular}
+\section*{Workshops}
 \begin{itemize}[leftmargin=1.5cm]
     \item Workshop on MATLAB for Scientific Computing \hfill Dec 2023
     \item Strive to Thrive: An Intensive Workshop for JAM \& GATE \hfill Jan 2024
 \end{itemize}
 
 % Extra-Curricular Activities
-\section*{Extra-Curricular Activities}
+\section*{Leadership and Extra-Curricular Activities}
 \begin{itemize}[leftmargin=1.5cm]
-    \item Chairperson, Department of Mathematics (2024 -- 2025)
-    \item I\&E Coordinator, Department of Mathematics (2023 -- 2024)
-    \item Organized events for the Drama Club (2016 -- 2017)
+    \item Chairperson, Department of Mathematics \hfill 2024 -- 2025
+    \item I\&E Coordinator, Department of Mathematics \hfill 2023 -- 2024
+    \item Organized events for the Drama Club \hfill 2016 -- 2017
 \end{itemize}
 
 % Hobbies
